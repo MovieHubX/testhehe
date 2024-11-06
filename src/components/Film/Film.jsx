@@ -18,6 +18,17 @@ const Film = ({ baseUrl, media_type, id, vote_average, poster_path, title, name 
     lg: "43vh",
   });
 
+  // Log props to debug
+  console.log("Film Component Props:", {
+    baseUrl,
+    media_type,
+    id,
+    vote_average,
+    poster_path,
+    title,
+    name
+  });
+
   return (
     <>
       <Link
@@ -36,6 +47,7 @@ const Film = ({ baseUrl, media_type, id, vote_average, poster_path, title, name 
               opacity: '1',
               transform: 'translateY(0)',
               transition: 'all .25s ease-in-out'
+
             }
           }}
         >
